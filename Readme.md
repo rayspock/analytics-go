@@ -22,7 +22,6 @@ import (
 
 func main() {
     // Instantiates a client to use send messages to the Rudder API.
-    // User your WRITE KEY in below placeholder "RUDDER WRITE KEY"
     client := analytics.New(<WRITE_KEY>, <DATA_PLANE_URL>)
 
     // Enqueues a track event that will be sent asynchronously.
@@ -45,7 +44,6 @@ import (
 
 func main() {
     // Instantiates a client to use send messages to the Rudder API.
-    // User your WRITE KEY in below placeholder "RUDDER WRITE KEY"
     client, _ := analytics.NewWithConfig(<WRITE_KEY>, <DATA_PLANE_URL>,
 		analytics.Config{
 			Interval:  30 * time.Second,
